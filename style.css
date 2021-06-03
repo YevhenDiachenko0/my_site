@@ -1,0 +1,78 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(127.02deg, rgba(76, 54, 123, 0.2) 1.49%, rgba(11, 11, 144, 0.2) 27.7%, rgba(23, 149, 203, 0.2) 71.27%, rgba(5, 255, 240, 0.2) 104.17%) no-repeat center center;
+    background-size: cover;
+  }
+
+a {
+    color: #111;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #77f;
+    transition: 0.2s ease-in-out;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+    padding: 30px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fafafa;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 100px;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.icon svg {
+    width: 50px;
+    margin: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.icon:hover svg {
+     fill: #77f;
+}
+
+#facts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fact {
+    margin-bottom: 5px;
+    font-weight: bold;
+    animation: slide-up 1s ease-in-out;
+}
